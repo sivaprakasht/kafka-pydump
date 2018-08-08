@@ -42,7 +42,7 @@ class Config(Resource):
         count = 0
         try:
             for config in configs:
-                cursor.execute('insert into config (KEY,VALUE) values (?,?)', (config, configs[config]))
+                cursor.execute('insert into config (KEY,VALUE) values (?,?)', (config, str(configs[config])))
             conn.commit()
             count += 1
         except sqlite3.IntegrityError as integrityError:
