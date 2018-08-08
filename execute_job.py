@@ -3,8 +3,9 @@ import random
 import sqlite3
 from time import sleep
 
-from config import DATABASE
 from kafka import KafkaProducer
+
+from config import DATABASE
 
 STATUS_NEW = 'NEW'
 STATUS_INPROGRESS = 'IN_PROGRESS'
@@ -102,7 +103,7 @@ def execute():
 
 
 def main():
-    # init_db.initialize_db_from_file(SQL_SCRIPT)
+    #init_db.initialize_db_from_file(SQL_SCRIPT)
     execute()
 
 
