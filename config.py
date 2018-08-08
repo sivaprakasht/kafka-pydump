@@ -1,0 +1,1 @@
+DATABASE = 'sqlite/kafka_boy.db'
