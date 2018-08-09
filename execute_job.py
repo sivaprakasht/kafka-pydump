@@ -2,7 +2,7 @@ import json
 import random
 import sqlite3
 from time import sleep
-
+import init_db
 from kafka import KafkaProducer
 
 from config import DATABASE
